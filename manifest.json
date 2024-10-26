@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "minAppVersion": "0.12.0",
   "description": "A plugin to help with CBT sessions in Obsidian",
-  "author": "Your Name",
-  "authorUrl": "https://yourwebsite.com",
+  "author": "Naswhyx",
+  "authorUrl": "https://github.com/Naswhyx/cbt-obs",
   "isDesktopOnly": false
 }
