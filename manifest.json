@@ -3,7 +3,8 @@
   "name": "CBT Plugin",
   "version": "0.1.0",
   "description": "A plugin for creating Cognitive Behavioral Therapy (CBT) sessions in Obsidian.",
-  "author": "Naswhyx",  // Замените на ваше имя или никнейм
+  "author": "Ваше имя",  // Замените на ваше имя или никнейм
   "minAppVersion": "0.9.7", // Минимальная версия Obsidian, с которой будет работать плагин
   "main": "main.js", // Убедитесь, что это имя вашего файла с кодом плагина
-  "manifestVersion": 1,
+  "manifestVersion": 1 // Версия манифеста
+}
