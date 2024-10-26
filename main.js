@@ -15,7 +15,7 @@ class CbtPlugin extends Plugin {
 
   async createCbtSession() {
     const folderPath = 'КПТ СЕССИИ';
-    const fileName = `КПТ_${new Date().toLocaleDateString()}.md`;
+    const fileName = `КПТ_${new Date().toISOString().split('T')[0]}.md`; // Изменено на формат YYYY-MM-DD
     
     const template = `
 ---
@@ -55,12 +55,12 @@ tags:
       const folderExists = await this.app.vault.adapter.exists(folderPath);
       if (!folderExists) {
         console.log("Creating folder:", folderPath);
-        await this.app.vault.createFolder(folderPath);
+        await this.app.vault.createFolder(folderPath); // Проверьте наличие метода createFolder
       }
 
       const filePath = `${folderPath}/${fileName}`;
       console.log("Creating file at path:", filePath);
-      await this.app.vault.create(filePath, template);
+      await this.app.vault.create(filePath, template); // Убедитесь, что метод create существует
       new Notice(`CBT session created: ${filePath}`);
     } catch (error) {
       console.error("Error creating session:", error);  // Логирование ошибки создания файла или папки
