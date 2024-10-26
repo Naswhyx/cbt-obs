@@ -14,8 +14,8 @@ class CbtPlugin extends Plugin {
   }
 
   async createCbtSession() {
-    const folderPath = 'CBT Sessions';
-    const fileName = `CBT_Session_${new Date().toLocaleDateString()}.md`;
+    const folderPath = 'КПТ СЕССИИ';
+    const fileName = `КПТ_${new Date().toLocaleDateString()}.md`;
     
     const template = `
 ---
